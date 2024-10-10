@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: OpenSans, 'Arial';
+  background-color: #fbf6ee;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* LAYOUTS */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+}
+
+.menu-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+article {
+  display: flex;
+  column-gap: 30px;
+}
+
+.item-name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1500px) {
+  .menu-container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  article {
+    display: flex;
+    column-gap: 30px;
+    flex-direction: column;
+  }
+
+  img {
+    align-self: center;
+  }
+}
+
+/* ELEMENTS */
+
+h3 {
+  text-align: center;
+  margin-top: 55px;
+  font-size: 65px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.underline {
+  width: 450px;
+  height: 6px;
+  background-color: #8B0000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.btn-container {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: transparent;
+  border-width: 3px;
+  border-color: #8B0000;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+}
+
+button:hover {
+  opacity: 0.7;
+  background-color: #8B0000;
+  color: white;
+  border-color: #8B0000;
+}
+
+.menu-container {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1800px;
+}
+
+article {
+  margin-top: 100px;
+}
+
+img {
+  object-fit: cover;
+  border: 5px solid #8B0000;
+  border-radius: 15px;
+  width: 200px;
+  height: 300px;
+  display: block;
+  object-position: center;
+}
+
+.item-name-price {
+  border-bottom: 2px solid #a18888;
+  letter-spacing: 0.25rem;
+}
+
+.price {
+  color: #8B0000;
+}
+
+p {
+  letter-spacing: 0.15rem;
+}
