@@ -1,3 +1,3 @@
-#Menu display web page
+# MENU DISPLAY WEBPAGE 
 
-Basic menu for coffee shop using HTML, CSS, JavaScript
+A menu webpage displaying café items using HTML, CSS, and JavaScript.
